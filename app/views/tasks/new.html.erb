@@ -1,0 +1,22 @@
+<div class="container-3 bg-light">
+
+<h2 class="pb-3">Create a new Task</h2>
+
+
+<div class="form-container">
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+   <%= f.submit %>
+<% end %>
+</div>
+
+
+<div class="button-box">
+<%= link_to 'Back', tasks_path, class:"btn btn-outline-secondary" %>
+</div>
+
+
+</div>

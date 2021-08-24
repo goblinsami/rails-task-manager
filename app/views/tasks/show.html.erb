@@ -1,0 +1,41 @@
+
+<div class="container bg-light mt-3">
+
+<h2> <%= @task.title %><%= link_to task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } do  %>
+<i class="far fa-trash-alt"></i>
+<% end %>
+
+<%= link_to edit_path(@task) do  %>
+<i class="fas fa-pencil-alt"></i>
+<% end %>
+
+
+
+
+
+
+
+
+</h2>
+<div class="container-2 my-5">
+<p> <%= @task.details %></p>
+
+</div>
+
+
+<div class="button-box">
+
+<%= link_to 'back', tasks_path, class:"btn btn-outline-secondary" %>
+
+
+<%# <%= link_to "Delete this task ",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" }, class:"myButton" %>
+
+
+</div>
+
+</div>
